@@ -11,11 +11,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Public Routes */}
         <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-
-        {/* Admin Route */}
         <Route
           path="/admin"
           element={
@@ -24,8 +21,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Normal User Route */}
         <Route
           path="/stores"
           element={
@@ -34,8 +29,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Store Owner Route */}
         <Route
           path="/owner"
           element={
@@ -44,8 +37,6 @@ function App() {
             </ProtectedRoute>
           }
         />
-
-        {/* Fallback */}
         <Route path="*" element={<Login />} />
       </Routes>
     </BrowserRouter>

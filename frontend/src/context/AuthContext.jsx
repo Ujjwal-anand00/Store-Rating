@@ -6,7 +6,6 @@ export const AuthContext = createContext()
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null)
 
-  // 🔥 RESTORE USER ON PAGE LOAD
   useEffect(() => {
     const role = localStorage.getItem("role")
     if (role) {
