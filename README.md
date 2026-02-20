@@ -82,7 +82,7 @@ Built using **React (Vite) + Node.js + Express + Prisma + PostgreSQL**.
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Ujjwal-anand00/Store-Rating
 cd store-rating
 ```
 ---
